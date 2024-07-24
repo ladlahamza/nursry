@@ -1,0 +1,40 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 960px;
+}
+body{
+  margin-top: 100px;
+  background-color: #f5ebeb;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+h1 h2 h3 h4 h5 h6{
+  font-weight: 800;
+}
+.nav-link{
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer{
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+}
+.profile-logo {
+  width: 30px;
+  height:30px;
+}

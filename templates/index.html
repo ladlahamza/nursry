@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="../css/all.min.css">
+    <title>Nersery Web</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark ">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">Ladla's Nersery</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div>
+            <ul class="navbar-nav me-auto mb-2 mb-md-0 ">
+              <li class="nav-item">
+                <a class="nav-link active  " aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item"><a href="products.html" class="nav-link px-2 text-body-primary">Products</a></li>
+              <li class="nav-item"><a href="faqs.html" class="nav-link px-2 text-body-primary">FAQs</a></li>
+              <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-primary">About</a></li>
+            </ul>
+            </div>
+            <!-- dropdown -->
+            <div class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item dropdown ms-auto">
+                    <button class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                      Create Account
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item" href="login.html">Login</a> </li>
+                      <li><hr class="dropdown-divider"></li> 
+                      <li><a class="dropdown-item" href="signup.html">Signup</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <form class="d-flex md-w-70%" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+            
+          </div>
+        </div>
+      </nav>
+      <!-- nav-bar ends -->
+      <div class="b-example-divider"></div>
+
+  <div class="container my-5">
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+      <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+        <h1 class="display-4 fw-bold lh-1 text-body-emphasis">You can Chose any thing and Order Us</h1>
+        <p class="lead">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3">
+          <a class="btn btn-primary btn-lg px-4 me-md-2 fw-bold" href="checkout.html" role="button">Order Now</a>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Chose Any</button>
+        </div>
+      </div>
+      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+          <img class="rounded-lg-3" src="../images/Website Traffic .png" alt="" width="720">
+      </div>
+    </div>
+  </div>
+      <!-- shape -->
+     
+
+      <!-- card -->
+
+      <div class="container-fluid mt-5  ">
+        <h1 class="text-center mb-4">Nursery Plants and Flowers</h1>
+        <div class="row row-cols-1 row-cols-md-4 g-4 ">
+            <!-- Product 1 -->
+            <div class="col mb-4">
+                <div class="card h-100 shadow-lg">
+                    <img src="../images/Bonsai Flowerpot.png" class="card-img-top " alt="Bonsai Flowerpot">
+                    <hr>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center ">
+                            <h4 class="card-title fw-bold">Bonsai Flowerpot</h4>
+                            <h3 class="pricing">Rs 150</h3>
+                        </div>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        <div class="input-group mb-3">
+                            <button class="btn btn-outline-secondary" type="button" onclick="decrementQuantity('bonsai')">-</button>
+                            <input type="text" id="quantity-bonsai" class="form-control text-center" value="1">
+                            <button class="btn btn-outline-secondary" type="button" onclick="incrementQuantity('bonsai')">+</button>
+                        </div>
+                        <a href="checkout.html" onclick="orderNow('Bonsai Flowerpot', 150, 1)" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Order Now">
+                            <i class="fas fa-shopping-cart me-2"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Product 2 -->
+            <div class="col mb-4">
+                <div class="card h-100 shadow-lg">
+                    <img src="../images/parterre.png" class="card-img-top" alt="Parterre">
+                    <hr>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="card-title">Parterre</h5>
+                            <h3 class="pricing">Rs 200</h3>
+                        </div>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        <div class="input-group mb-3">
+                            <button class="btn btn-outline-secondary" type="button" onclick="decrementQuantity('parterre')">-</button>
+                            <input type="text" id="quantity-parterre" class="form-control text-center" value="1">
+                            <button class="btn btn-outline-secondary" type="button" onclick="incrementQuantity('parterre')">+</button>
+                        </div>
+                        <a href="checkout.html" onclick="orderNow('Parterre', 200, 1)" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Order Now">
+                            <i class="fas fa-shopping-cart me-2"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Product 3 -->
+            <div class="col mb-4">
+                <div class="card h-100 shadow-lg">
+                    <img src="../images/daisy.jpg" class="card-img-top" alt="Daisy">
+                    <hr>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="card-title">Daisy</h5>
+                            <h3 class="pricing">Rs 150</h3>
+                        </div>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        <div class="input-group mb-3">
+                            <button class="btn btn-outline-secondary" type="button" onclick="decrementQuantity('daisy')">-</button>
+                            <input type="text" id="quantity-daisy" class="form-control text-center" value="1">
+                            <button class="btn btn-outline-secondary" type="button" onclick="incrementQuantity('daisy')">+</button>
+                        </div>
+                        <a href="checkout.html" onclick="orderNow('Daisy', 150, 1)" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Order Now">
+                            <i class="fas fa-shopping-cart me-2"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Product 4 -->
+            <div class="col mb-4">
+                <div class="card h-100 shadow-lg">
+                    <img src="../images/Hanging basket flower pot.png" class="card-img-top" alt="Hanging basket flower">
+                    <hr>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="card-title fw-bold ">Hanging Basket Flower</h4>
+                            <h3 class="pricing">Rs 150</h3>
+                        </div>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        <div class="input-group mb-3">
+                            <button class="btn btn-outline-secondary" type="button" onclick="decrementQuantity('hanging_basket')">-</button>
+                            <input type="text" id="quantity-hanging_basket" class="form-control text-center" value="1">
+                            <button class="btn btn-outline-secondary" type="button" onclick="incrementQuantity('hanging_basket')">+</button>
+                        </div>
+                        <a href="checkout.html" onclick="orderNow('Hanging Basket Flower', 250, 1)" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Order Now">
+                            <i class="fas fa-shopping-cart me-2"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Product 5 -->
+            <div class="col mb-4">
+                <div class="card h-100 shadow-lg">
+                    <img src="../images/herbaceous.png" class="card-img-top" alt="Herbaceous">
+                    <hr>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="card-title">Herbaceous</h5>
+                            <h3 class="pricing">Rs 150</h3>
+                        </div>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        <div class="input-group mb-3">
+                            <button class="btn btn-outline-secondary" type="button" onclick="decrementQuantity('herbaceous')">-</button>
+                            <input type="text" id="quantity-herbaceous" class="form-control text-center" value="1">
+                            <button class="btn btn-outline-secondary" type="button" onclick="incrementQuantity('herbaceous')">+</button>
+                        </div>
+                        <a href="checkout.html" onclick="orderNow('Herbaceous', 180, 1)" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Order Now">
+                            <i class="fas fa-shopping-cart me-2"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Product 6 -->
+            <div class="col mb-4">
+                <div class="card h-100 shadow-lg">
+                    <img src="../images/Houseplant Dragon.png" class="card-img-top" alt="Houseplant Dragon">
+                    <hr>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="card-title fw-bold">Houseplant Dragon</h4>
+                            <h3 class="pricing">Rs 350</h3>
+                        </div>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        <div class="input-group mb-3">
+                            <button class="btn btn-outline-secondary" type="button" onclick="decrementQuantity('houseplant_dragon')">-</button>
+                            <input type="text" id="quantity-houseplant_dragon" class="form-control text-center" value="1">
+                            <button class="btn btn-outline-secondary" type="button" onclick="incrementQuantity('houseplant_dragon')">+</button>
+                        </div>
+                        <a href="checkout.html" onclick="orderNow('Houseplant Dragon', 220, 1)" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Order Now">
+                            <i class="fas fa-shopping-cart me-2"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Product 7 -->
+            <div class="col mb-4">
+                <div class="card h-100 shadow-lg">
+                    <img src="../images/Houseplant.png" class="card-img-top" alt="Houseplant">
+                    <hr>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="card-title">Houseplant</h5>
+                            <h3 class="pricing">Rs 100</h3>
+                        </div>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        <div class="input-group mb-3">
+                            <button class="btn btn-outline-secondary" type="button" onclick="decrementQuantity('houseplant')">-</button>
+                            <input type="text" id="quantity-houseplant" class="form-control text-center" value="1">
+                            <button class="btn btn-outline-secondary" type="button" onclick="incrementQuantity('houseplant')">+</button>
+                        </div>
+                        <a href="checkout.html" onclick="orderNow('Houseplant', 210, 1)" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Order Now">
+                            <i class="fas fa-shopping-cart me-2"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Product 8 -->
+            <div class="col mb-4">
+                <div class="card h-100 shadow-lg">
+                    <img src="../images/Cordyline Plant.png" class="card-img-top" alt="Cordyline Plant">
+                    <hr>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h5 class="card-title">Cordyline</h5>
+                            <h3 class="pricing">Rs 300</h3>
+                        </div>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        <div class="input-group mb-3">
+                            <button class="btn btn-outline-secondary" type="button" onclick="decrementQuantity('cordyline')">-</button>
+                            <input type="text" id="quantity-cordyline" class="form-control text-center" value="1">
+                            <button class="btn btn-outline-secondary" type="button" onclick="incrementQuantity('cordyline')">+</button>
+                        </div>
+                        <a href="checkout.html" onclick="orderNow('Cordyline Plant', 230, 1)" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Order Now">
+                            <i class="fas fa-shopping-cart me-2"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Product 9 -->
+            <div class="col mb-4">
+                <div class="card h-100 shadow-lg">
+                    <img src="../images/Shrub Ornamental plant.png" class="card-img-top" alt="Shrub Ornamental Plant">
+                    <hr>
+                    <div class="card-body">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="card-title fw-bold">Shrub Ornamental Plant</h4>
+                            <h3 class="pricing">Rs 500</h3>
+                        </div>
+                        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                        <div class="input-group mb-3">
+                            <button class="btn btn-outline-secondary" type="button" onclick="decrementQuantity('shrub_ornamental')">-</button>
+                            <input type="text" id="quantity-shrub_ornamental" class="form-control text-center" value="1">
+                            <button class="btn btn-outline-secondary" type="button" onclick="incrementQuantity('shrub_ornamental')">+</button>
+                        </div>
+                        <a href="checkout.html" onclick="orderNow('Shrub Ornamental Plant', 240, 1)" class="btn btn-outline-primary" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Order Now">
+                            <i class="fas fa-shopping-cart me-2"></i> Order Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+      <!-- sign-up -->
+
+      <div class="b-example-divider "></div>
+
+  <div class="container  col-xl-10 col-xxl-8 px-4 py-5">
+    <div class="row align-items-center g-lg-5 py-5">
+      <div class="col-lg-7 text-center text-lg-start">
+        <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3"> Sign-up form</h1>
+        <p class="col-lg-10 fs-4">A nursery signup form typically includes fields for the child's personal information . The form ensures all necessary information is gathered for enrollment and care.</p>
+      </div>
+      <div class="col-md-10 mx-auto col-lg-5">
+        <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput"> Email address</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+          <div class="checkbox mb-3">
+            <label>
+              <input type="checkbox" value="remember-me"> Remember me
+            </label>
+          </div>
+          <button class="w-100 btn btn-lg btn-primary" type="submit">Sign up</button>
+          <hr class="my-4">
+          <small class="text-body-secondary">By clicking Sign up, you agree to the terms of use.</small>
+        </form>
+      </div>
+    </div>
+  </div>
+      
+      <!-- footer -->
+      <footer class="bg-dark text-white text-center py-4">
+    <ul class="nav justify-content-center border-bottom ">
+      <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-primary">Home</a></li>
+      <li class="nav-item"><a href="products.html" class="nav-link px-2 text-body-primary">Products</a></li>
+      <li class="nav-item"><a href="faqs.html" class="nav-link px-2 text-body-primary">FAQs</a></li>
+      <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-primary">About</a></li>
+    </ul>
+    <p class="text-center pt-3 text-body-primary">&copy; 2024 Ladla's Nersery, Inc</p>
+    <ul class="list-unstyled d-flex justify-content-end pe-5">
+      <li><a href="https://example.com/your-profile" target="_blank">
+        <img src="../images/facebook.png" alt="Your Profile Logo" class="profile-logo">
+      </a>
+    </li>
+    <li><a href="https://example.com/your-profile" target="_blank">
+      <img src="../images/instagram.png" alt="Your Profile Logo" class="profile-logo">
+    </a>
+  </li>
+  <li><a href="https://example.com/your-profile" target="_blank">
+    <img src="../images/twitter.png" alt="Your Profile Logo" class="profile-logo">
+  </a>
+</li>
+    </ul>
+  </footer>
+    
+  <script>
+    // Function to handle ordering
+    function orderNow(productName, price, quantity) {
+        // Example action: for demonstration only
+        console.log(`Ordered ${quantity} of ${productName} at Rs ${price} each.`);
+        alert(`Ordered ${quantity} of ${productName} at Rs ${price} each.`);
+    }
+
+    // Function to increment quantity
+    function incrementQuantity(product) {
+        let inputField = document.getElementById(`quantity-${product}`);
+        let quantity = parseInt(inputField.value);
+        inputField.value = quantity + 1;
+    }
+
+    // Function to decrement quantity (minimum 1)
+    function decrementQuantity(product) {
+        let inputField = document.getElementById(`quantity-${product}`);
+        let quantity = parseInt(inputField.value);
+        if (quantity > 1) {
+            inputField.value = quantity - 1;
+        }
+    }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="../js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

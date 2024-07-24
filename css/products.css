@@ -1,0 +1,22 @@
+body{
+    margin-top: 100px;
+    background-color: #f5ebeb;
+    color: #333;
+    font-family: Arial, sans-serif;
+}
+.card {
+    transition: transform 0.2s;
+}
+.card:hover {
+    transform: scale(1.05);
+    transform: scale(1.05);
+}
+.nav-link{
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.profile-logo {
+    width: 30px;
+    height:30px;
+  }
